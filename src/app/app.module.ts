@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {MyDatePickerModule} from 'mydatepicker';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MyDatePickerModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
